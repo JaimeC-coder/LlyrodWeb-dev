@@ -1,0 +1,180 @@
+.tittleSection{
+   display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+   background-color: var(--dark);
+   padding: 40px 60px;
+}
+
+.tittleContainer{
+	width: 100%;
+   display: flex;
+   flex-direction: column;
+   color: var(--white);
+   font-family: var(--inter);
+}
+
+.tittlePrincipal{
+   font-size: var(--40);
+   font-weight: 300;
+}
+
+.tittleSecondary{
+   font-size: var(--40);
+   font-weight: 500;
+}
+
+/*---------------------------------------------------------- photo -------------------------------------------------*/
+
+.photoSection{
+   position: relative;
+}
+
+.photoSostenibilidad{
+   width: 100%;
+   height: 560px;
+   object-fit: cover;
+}
+
+.photoContainer{
+   position: absolute;
+   color: var(--white);
+   font-family: var(--inter);
+   top: 75%;
+   left: 60px;
+   width: 400px;
+}
+
+.phototittleSecondary{
+   font-size: var(--24);
+   font-family: var(--ibm);
+   font-weight: 400;
+   border-left: var(--amarillo) 3px solid;
+   padding-left: 20px;
+}
+
+.degradadoPortafolioTop {
+   position: relative;
+   height: 560px;
+   background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 0.70) 98%);
+   z-index: 0;
+   margin-bottom: -560px;
+}
+
+/*---------------------------------------------------------- cards -------------------------------------------------*/
+
+.cardsSection{
+   display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+   padding: 40px 60px;
+}
+
+.cardsContainer{
+	width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   width: 32%;
+   gap: 8px;
+}
+
+.cardImage{
+   width: 100%;
+   height: auto;
+   height: 300px;
+   object-fit: cover;
+   transition: transform .5s;
+}
+
+.cardImage:hover{
+   transform: scale(1.05);
+}
+
+.cardNumber{
+   font-family: var(--inter);
+   font-size: var(--56);
+}
+
+.cardTittle{
+   font-family: var(--ibm);
+   font-size: var(--24);
+   color: var(--dark);
+}
+
+.cardTexto{
+   font-family: var(--inter);
+   font-size: var(--16);
+   color: var(--dark);
+}
+
+@media screen and (max-width: 1000px) {
+
+   /*---------------------------------------------------------- cards -------------------------------------------------*/
+
+   .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   .card{
+      width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   .tittleSection{
+      padding: 40px 40px;
+   }
+
+   .tittlePrincipal{
+      font-size: var(--32);
+      font-weight: 200;
+   }
+   
+   .tittleSecondary{
+      font-size: var(--32);
+      font-weight: 400;
+   }
+
+   /*-------foto en sostenibilidad-------*/
+
+   .photoSostenibilidad{
+      width: 100%;
+      height: 400px;
+   }
+   
+   .photoContainer{
+      top: 65%;
+      left: 40px;
+      width: 280px;
+   }
+   
+   .phototittleSecondary{
+      font-size: var(--20);
+   }
+   
+   .degradadoPortafolioTop {
+      height: 400px;
+      margin-bottom: -400px;
+   }
+
+   /*-------cards------*/
+
+   .cardsSection{
+      padding: 40px 40px;
+   }
+
+   .card{
+      gap: 8px;
+   }
+}
