@@ -1,4 +1,4 @@
-import styles from "../../../../styles/sectionNosotros.module.css";
+import styles from "../../../styles/sectionNosotros.module.css";
 
 const cards = [
     {

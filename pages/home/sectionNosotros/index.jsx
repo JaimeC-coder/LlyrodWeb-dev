@@ -1,7 +1,7 @@
 //css imports
 import Image from "next/image";
-import stylesSection from "../../../../styles/sectionSomos.module.css";
-import fondo from "../../../../public/assets/img/home/sectionSomos/rocks-8283171_1920.jpg";
+import stylesSection from "../../../styles/sectionSomos.module.css";
+import fondo from "../../../public/assets/img/home/sectionSomos/rocks-8283171_1920.jpg";
 
 const SectionNosotros = () => {
 
