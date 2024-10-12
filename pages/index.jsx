@@ -22,8 +22,8 @@ import InteligenciaImagen from "../public/assets/img/home/inteligencia_home.png"
 import {BsGraphUpArrow} from "react-icons/bs";
 import {BsRecycle} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
-import SectionSomos from "./home/sectionSomos/components/accordion";
-import SectionNosotros from "./home/sectionNosotros/components/accordion";
+import SectionSomos from "./home/sectionSomos/index";
+import SectionNosotros from "./home/sectionNosotros/index";
 
 
 //components
