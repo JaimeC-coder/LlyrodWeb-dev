@@ -1,15 +1,9 @@
-import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
 import styles from "../../../../styles/sectionNosotros.module.css";
 import fondo from "../../../../public/assets/img/home/sectionSomos/rocks-8283171_1920.jpg";
-// import {BsChevronDown} from "react-icons/bs";
+
 
 export default function SectionSomos() {
-  const [isShowing, setIsShowing] = useState(false);
 
-  const toggle = () => {
-    setIsShowing(!isShowing);
-  };
   const cards = [
     {
       title: "ENFOQUE HUMANO",

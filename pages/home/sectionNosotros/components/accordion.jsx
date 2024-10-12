@@ -1,15 +1,10 @@
 import Image from "next/image";
-import React, { useState, useEffect, useRef } from "react";
 import stylesSection from "../../../../styles/sectionSomos.module.css";
 import fondo from "../../../../public/assets/img/home/sectionSomos/rocks-8283171_1920.jpg";
-// import {BsChevronDown} from "react-icons/bs";
+
 
 export default function SectionNosotros() {
-  const [isShowing, setIsShowing] = useState(false);
 
-  const toggle = () => {
-    setIsShowing(!isShowing);
-  };
 
   return (
     <>

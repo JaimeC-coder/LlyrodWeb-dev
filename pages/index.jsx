@@ -25,6 +25,7 @@ import {BsSun} from "react-icons/bs";
 import SectionSomos from "./home/sectionSomos/components/accordion";
 import SectionNosotros from "./home/sectionNosotros/components/accordion";
 
+
 //components
 
 
