@@ -14,7 +14,7 @@
 .degradadoPortafolioTop {
    position: relative;
    height: 600px;
-   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 1) 100%);
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(8, 17, 1, 0.863) 100%);
    z-index: 0;
    margin-bottom: -600px;
 }
@@ -89,7 +89,7 @@
    padding: 8px 36px;
    margin: 24px 0px;
    border-radius: 8px;
-   width: 120px;
+   width: 140px;
 }
 
 .graficohome{
@@ -105,7 +105,7 @@
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-   background-color: var(--dark);
+   background-color:#081101;
    padding: 40px 60px;
 }
 

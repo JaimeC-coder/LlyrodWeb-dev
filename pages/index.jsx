@@ -22,6 +22,11 @@ import InteligenciaImagen from "../public/assets/img/home/inteligencia_home.png"
 import {BsGraphUpArrow} from "react-icons/bs";
 import {BsRecycle} from "react-icons/bs";
 import {BsSun} from "react-icons/bs";
+import SectionSomos from "./home/sectionSomos/components/accordion";
+import SectionNosotros from "./home/sectionNosotros/components/accordion";
+
+//components
+
 
 const cards=[
   {id: 'mineria', imagen: MineriaImagen,icon: <BsRecycle size={24}/>, tittle:"Minería & Gestión Social", link: "#"},
@@ -84,11 +89,9 @@ const Home = () => {
             <div className={styles.texto}>
               <span className={styles.textoSecundario}>Generamos valor a través de</span>
               <span className={styles.textoPrincipal}>Servicios Especializados</span>
-              <Link className={styles.buttonVer} href="/industrias">Ver &gt;</Link>
+              <Link className={styles.buttonVer} href="/industrias">Ver más </Link>
             </div>
-            <div className={styles.grafico}>
-              <Image src={GraficoHome} className={styles.graficohome} alt="Grafico Home"/>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -128,14 +131,10 @@ const Home = () => {
       </section>
 
       <section className={styles.infoSection}>
-        <div className={styles.infoContainer}>
-          <div className={styles.cardInfo}>
-            <Image src={GifLogoHome} className={styles.infoLogo} alt="Logo Home"/>
-            <span className={styles.infoHome}>Integramos el desarrollo de estudios de complejidad
-             técnica con la adopción de tecnologías que facilitan la correcta toma de decisiones 
-             para el ámbito productivo, social y medioambiental.</span>
-          </div>
-        </div>
+           <SectionSomos></SectionSomos>
+      </section>
+      <section className={styles.infoSection}>
+           <SectionNosotros></SectionNosotros>
       </section>
 
     </>

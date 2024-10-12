@@ -1,0 +1,62 @@
+/* /* Contenedor de la sección general */
+.solutionsSection {
+    padding: 50px 0;
+    text-align: center;
+}
+.title{
+    margin-bottom: 50px;
+    display: flex   ;
+}
+
+/* Estilo para el título y el párrafo */
+.title h2 {
+    width: 40%;
+    text-align: start;
+    font-size: 5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title p {
+    width: 60%;
+    text-align: start;
+
+    font-size: 2rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+
+/* Estilo del contenedor de las tarjetas */
+.solutionsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada tarjeta */
+.solutionItem {
+    max-width: 400px;
+    text-align: left;
+}
+
+.solutionItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.solutionItem h3 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+}
+
+.solutionItem p {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+}
