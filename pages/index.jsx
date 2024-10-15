@@ -10,13 +10,13 @@ import { useEffect,useRef } from 'react';
 import { useRouter } from "next/router";
 
 //img
-import ImagenHome from "../public/assets/img/imagen_home.png";
-import GraficoHome from "../public/assets/img/grafico_home.png";
-import LogoHome from "../public/assets/logo_soloimagen.png";
-import GifLogoHome from "../public/assets/img/gif_llyrod.gif";
-import MineriaImagen from "../public/assets/img/home/mineria_home.png";
-import TecnologiaImagen from "../public/assets/img/home/incubadora_home.png";
-import InteligenciaImagen from "../public/assets/img/home/inteligencia_home.png";
+import ImagenHome from "./assets/img/imagen_home.png";
+import GraficoHome from "./assets/img/grafico_home.png";
+import LogoHome from "./assets/logo_soloimagen.png";
+import GifLogoHome from "./assets/img/gif_llyrod.gif";
+import MineriaImagen from "./assets/img/home/mineria_home.png";
+import TecnologiaImagen from "./assets/img/home/incubadora_home.png";
+import InteligenciaImagen from "./assets/img/home/inteligencia_home.png";
 
 //icons
 import {BsGraphUpArrow} from "react-icons/bs";
@@ -88,8 +88,12 @@ const Home = () => {
 
           <div className={styles.textandGraph}>
             <div className={styles.texto}>
-              <span className={styles.textoSecundario}>Generamos valor a través de</span>
-              <span className={styles.textoPrincipal}>Servicios Especializados</span>
+              <span className={styles.textoSecundario}>Transformamos Desafíos en Oportunidades:</span>
+              <span className={styles.textoPrincipal}>En <span> </span> 
+                <strong>
+                  Grupo Llyrod
+                </strong>,
+                 creemos en el poder de la innovación y el talento joven para impulsar el cambio y el crecimiento sostenible. Somos una consultora especializada que combina experiencia técnica y tecnología de vanguardia para ofrecer soluciones que trascienden lo convencional.</span>
               <Link className={styles.buttonVer} href="/industrias">Ver más </Link>
             </div>
            
@@ -134,9 +138,9 @@ const Home = () => {
       <section className={styles.infoSection}>
            <SectionSomos></SectionSomos>
       </section>
-      <section className={styles.infoSection}>
+      {/* <section className={styles.infoSection}>
            <SectionNosotros></SectionNosotros>
-      </section>
+      </section> */}
 
     </>
   );

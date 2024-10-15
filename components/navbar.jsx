@@ -6,13 +6,15 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 
 //img
-import Logo from "../public/assets/logo_completo.png";
+import Logo from "../pages/assets/logo_soloimagen.png";
 
 const pages = [
-  { name: "Industrias", link: "/industrias" },
-  { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
-  { name: "Trabaja con nosotros", link: "/trabaja_con_nosotros" },
+  { name: "¿Quienes somos?", link: "/industrias" },
+  { name: "¿Que es lo que hacemos?", link: "/industrias" },
+  // { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
+  { name: "Unete a nosostros", link: "/trabaja_con_nosotros" },
 ];
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
