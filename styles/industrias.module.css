@@ -156,28 +156,44 @@
 	width: 100%;
    display: flex;
    justify-content: space-around;
+   flex-direction: column;
 }
 
 .card{
    display: flex;
-   flex-direction: column;
-   width: 32%;
+   flex-direction: row;
+   width: 100%;
    gap: 20px;
+   margin: 40px 0px;
+}
+.cardPar{
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100%;
+   gap: 20px;
+   margin: 40px 0px;
 }
 
 .cardImage{
-   width: 100%;
-   height: auto;
+  width: 40%;
    height: 300px;
    object-fit: cover;
    transition: transform .5s;
+   
 }
 
 .cardImage:hover{
    transform: scale(1.05);
 }
 
-
+.cardcontexttext{
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   padding: 25px;
+   text-align: end;
+   gap: 20px;
+}
 .cardNumber{
    font-family: var(--inter);
    font-size: var(--56);
