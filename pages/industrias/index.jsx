@@ -94,6 +94,23 @@ const Industrias = () => {
   return (
     <>
       <div className="">
+      <section className={styles.photoSection}>
+          <div className={styles.degradadoPortafolioTop}></div>
+          <div className={styles.photoContainer}>
+            <h2 className={styles.phototittleSecondary}>
+              Promovemos el desarrollo sostenible y ética en minería.
+            </h2>
+          </div>
+
+          {/*<div className={styles.graficoContainer}>
+            <Image className={styles.photografico} src={MineriaPrincipalGrafico} alt="Minería"/>
+  </div> */}
+          <Image
+            className={styles.photo}
+            src={MineriaPrincipal}
+            alt="Minería"
+          />
+        </section>
         <section className={styles.subtittleSection} id="mineria">
           <div className={styles.subtittleContainer}>
             <h2 className={styles.tittlePrincipalIndustrias}>
@@ -118,23 +135,7 @@ const Industrias = () => {
           </div>
         </section>
 
-        <section className={styles.photoSection}>
-          <div className={styles.degradadoPortafolioTop}></div>
-          <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>
-              Promovemos el desarrollo sostenible y ética en minería.
-            </h2>
-          </div>
-
-          {/*<div className={styles.graficoContainer}>
-            <Image className={styles.photografico} src={MineriaPrincipalGrafico} alt="Minería"/>
-  </div> */}
-          <Image
-            className={styles.photo}
-            src={MineriaPrincipal}
-            alt="Minería"
-          />
-        </section>
+      
 
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
