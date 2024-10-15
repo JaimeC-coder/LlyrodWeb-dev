@@ -138,10 +138,7 @@ const Home = () => {
       <section className={styles.infoSection}>
            <SectionSomos></SectionSomos>
       </section>
-      {/* <section className={styles.infoSection}>
-           <SectionNosotros></SectionNosotros>
-      </section> */}
-
+    
     </>
   );
 };

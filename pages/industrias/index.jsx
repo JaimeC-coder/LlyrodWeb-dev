@@ -7,19 +7,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 //img
-import MineriaPrincipal from "./../assets/img/industrias/mineria/mineria_principal.png";
-import MineriaPrincipalGrafico from "./../assets/img/industrias/mineria/mineria_principal_grafico.png";
-import Mineria1 from "./../assets/img/industrias/mineria/mineria_1.png";
-import Mineria2 from "./../assets/img/industrias/mineria/mineria_2.png";
-import Mineria3 from "./../assets/img/industrias/mineria/mineria_3.png";
-import TecnologiaPrincipal from "./../assets/img/industrias/tecnologia/tecnologia_principal.png";
-import Tecnologia1 from "./../assets/img/industrias/tecnologia/tecnologia_1.png";
-import Tecnologia2 from "./../assets/img/industrias/tecnologia/tecnologia_2.png";
-import Tecnologia3 from "./../assets/img/industrias/tecnologia/tecnologia_3.png";
-import InteligenciaPrincipal from "./../assets/img/industrias/inteligencia/inteligencia_prinicipal.png";
-import Inteligencia1 from "./../assets/img/industrias/inteligencia/inteligencia_1.png";
-import Inteligencia2 from "./../assets/img/industrias/inteligencia/inteligencia_2.png";
-import Inteligencia3 from "./../assets/img/industrias/inteligencia/inteligencia_3.png";
+import MineriaPrincipal from "./industrias/mineria/mineria_principal.png";
+import Mineria1 from "./industrias/mineria/mineria_1.png";
+import Mineria2 from "./industrias/mineria/mineria_2.png";
+import Mineria3 from "./industrias/mineria/mineria_3.png";
+import TecnologiaPrincipal from "./industrias/tecnologia/tecnologia_principal.png";
+import Tecnologia1 from "./industrias/tecnologia/tecnologia_1.png";
+import Tecnologia2 from "./industrias/tecnologia/tecnologia_2.png";
+import Tecnologia3 from "./industrias/tecnologia/tecnologia_3.png";
+import InteligenciaPrincipal from "./industrias/inteligencia/inteligencia_prinicipal.png";
+import Inteligencia1 from "./industrias/inteligencia/inteligencia_1.png";
+import Inteligencia2 from "./industrias/inteligencia/inteligencia_2.png";
+import Inteligencia3 from "./industrias/inteligencia/inteligencia_3.png";
 
 //icons
 import { BsGraphUpArrow } from "react-icons/bs";
