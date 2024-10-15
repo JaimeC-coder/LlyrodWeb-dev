@@ -125,14 +125,14 @@
    height: auto;
 }
 
-.degradadoPortafolioTop1 {
+.degradadoPortafolioTop {
    position: relative;
    height: 480px;
    background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 0.70) 98%);
    z-index: 0;
    margin-bottom: -480px;
 }
-.degradadoPortafolioTop {
+.degradadoPortafolioTop1 {
    position: relative;
    height: 660px;
    background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 0.70) 98%);
