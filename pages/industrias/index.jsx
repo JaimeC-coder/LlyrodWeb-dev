@@ -35,13 +35,13 @@ const cardsMineria = [
       "Nuestro compromiso es entender a fondo la dinámica de las comunidades locales y su entorno, para asegurarnos de que nuestras actividades generen un impacto positivo en su bienestar.",
   },
   {
-    images: [Mineria2, Mineria3],
+    images: [Mineria2, Mineria3,Mineria1],
     tittle: "Fortalecimiento de capacidades",
     texto:
       "Nuestra inversión en programas de formación y desarrollo de habilidades tiene como objetivo mejorar la calidad de vida y las oportunidades de las personas que rodean nuestras operaciones.",
   },
   {
-    images: [Mineria3, Mineria1],
+    images: [Mineria3, Mineria1,Mineria2],
     tittle: "Articulación comercial",
     texto:
       "Trabajamos en estrecha colaboración con empresas y emprendedores de la región para fomentar alianzas que impulsen el crecimiento sostenible y la prosperidad compartida.",
@@ -94,24 +94,7 @@ const Industrias = () => {
   return (
     <>
       <div className="">
-      <section className={styles.photoSection}>
-          <div className={styles.degradadoPortafolioTop}></div>
-          <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>
-              Promovemos el desarrollo sostenible y ética en minería.
-            </h2>
-          </div>
-
-          {/*<div className={styles.graficoContainer}>
-            <Image className={styles.photografico} src={MineriaPrincipalGrafico} alt="Minería"/>
-  </div> */}
-          <Image
-            className={styles.photo}
-            src={MineriaPrincipal}
-            alt="Minería"
-          />
-        </section>
-        <section className={styles.subtittleSection} id="mineria">
+      <section className={styles.subtittleSection} id="mineria">
           <div className={styles.subtittleContainer}>
             <h2 className={styles.tittlePrincipalIndustrias}>
               Minería & <br></br>Gestión Social
@@ -123,20 +106,32 @@ const Industrias = () => {
                 el desarrollo y sostenibilidad de las comunidades involucradas
                 en minería, gestión social y relaciones comunitarias.
               </h2>
-              <Accordion
-                title={
-                  "Grupo Llyrod tiene amplia experiencia en proyectos de infraestructura, educación, salud y desarrollo de cadenas productivas. En minería, su enfoque se basa en sostenibilidad y ética, buscando contribuir al bienestar de las comunidades locales y al cuidado del medio ambiente. Además, se compromete a altos estándares éticos, priorizando la integridad, transparencia y lucha contra la corrupción en sus operaciones."
-                }
-                content={
-                  "Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la ética en todas nuestras relaciones comerciales."
-                }
-              />
+              <div className={styles.textPrincipalIndustrias}>
+                <p>
+                Grupo Llyrod tiene amplia experiencia en proyectos de infraestructura, educación, salud y desarrollo de cadenas productivas. En minería, su enfoque se basa en sostenibilidad y ética, buscando contribuir al bienestar de las comunidades locales y al cuidado del medio ambiente. Además, se compromete a altos estándares éticos, priorizando la integridad, transparencia y lucha contra la corrupción en sus operaciones.
+               <br />
+                Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la ética en todas nuestras relaciones comerciales.
+                </p>
+              </div>
+       
             </div>
           </div>
         </section>
 
+        <section className={styles.photoSection}>
+          <div className={styles.degradadoPortafolioTop1}></div>
+          <div className={styles.photoContainer}>
+            <h2 className={styles.phototittleSecondary}>
+              Promovemos el desarrollo sostenible y ética en minería.
+            </h2>
+          </div>
+          <Image
+            className={styles.photo}
+            src={MineriaPrincipal}
+            alt="Minería"
+          />
+        </section>
       
-
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
@@ -145,16 +140,20 @@ const Industrias = () => {
 
               return (
                 <div className={cardStyle} key={index}>
-                <div className={styles.imageContainer}  style={{ '--totalDuration': `${card.images.length * 5}s` }}>
-                {card.images.map((image, imageIndex) => (
-                    <Image
-                      className={styles.cardImage}
-                      src={image} // Aquí recorremos las imágenes dentro del array 'images'
-                      alt={card.tittle}
-                      key={imageIndex}
-                    />
-                  ))}
-                </div>
+                  <div
+                    className={styles.imageContainer}
+                    style={{ "--totalDuration": `${card.images.length * 1}s` }}
+                  >
+                    {card.images.map((image, imageIndex) => (
+                      <Image
+                        className={styles.cardImage}
+                        src={image} // Aquí recorremos las imágenes dentro del array 'images'
+                        alt={card.tittle}
+                        key={imageIndex}
+                        style={{ animationDelay: `${imageIndex * (100 / card.images.length)}%` }} 
+                      />
+                    ))}
+                  </div>
                   <div className={styles.cardcontexttext}>
                     <span className={styles.cardTittle}>{card.tittle}</span>
                     <span className={styles.cardTexto}>{card.texto}</span>

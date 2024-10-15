@@ -44,7 +44,6 @@ const SectionSomos = () => {
             <div className={styles.cardGrid}>
               {cards.map((card, index) => (
                 <div key={index} className={styles.card}>
-                  {/* <card.icon className={styles.icon} /> */}
                   <i className={styles.icon} dangerouslySetInnerHTML={{__html: card.icon}}></i>
                   <h3 className={styles.cardTitle}>{card.title}</h3>
                   <p className={styles.cardDescription}>{card.description}</p>
