@@ -30,7 +30,7 @@ const SectionSomos = () => {
         <div className={styles.container}>
           <div className={styles.content}>
             <h2 className={styles.title}>
-              ¿En que podemos ayudarte?
+              ¿Por que elegirnos ?
             </h2>
             <p className={styles.description}>
               Nos enfocamos en las personas, combinando experiencia técnica con pasión por la innovación, y un
