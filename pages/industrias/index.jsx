@@ -29,19 +29,19 @@ import Accordion from "./components/accordion";
 
 const cardsMineria = [
   {
-    image: Mineria1,
+    images: [Mineria1, Mineria2, Mineria3],
     tittle: "Diagnóstico socioeconómico-productivo",
     texto:
       "Nuestro compromiso es entender a fondo la dinámica de las comunidades locales y su entorno, para asegurarnos de que nuestras actividades generen un impacto positivo en su bienestar.",
   },
   {
-    image: Mineria2,
+    images: [Mineria2, Mineria3],
     tittle: "Fortalecimiento de capacidades",
     texto:
       "Nuestra inversión en programas de formación y desarrollo de habilidades tiene como objetivo mejorar la calidad de vida y las oportunidades de las personas que rodean nuestras operaciones.",
   },
   {
-    image: Mineria3,
+    images: [Mineria3, Mineria1],
     tittle: "Articulación comercial",
     texto:
       "Trabajamos en estrecha colaboración con empresas y emprendedores de la región para fomentar alianzas que impulsen el crecimiento sostenible y la prosperidad compartida.",
@@ -140,15 +140,20 @@ const Industrias = () => {
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
             {cardsMineria.map((card, index) => {
-                 const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
+              const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
 
               return (
                 <div className={cardStyle} key={index}>
-                  <Image
-                    className={styles.cardImage}
-                    src={card.image}
-                    alt={card.tittle}
-                  />
+                <div className={styles.imageContainer}  style={{ '--totalDuration': `${card.images.length * 5}s` }}>
+                {card.images.map((image, imageIndex) => (
+                    <Image
+                      className={styles.cardImage}
+                      src={image} // Aquí recorremos las imágenes dentro del array 'images'
+                      alt={card.tittle}
+                      key={imageIndex}
+                    />
+                  ))}
+                </div>
                   <div className={styles.cardcontexttext}>
                     <span className={styles.cardTittle}>{card.tittle}</span>
                     <span className={styles.cardTexto}>{card.texto}</span>
