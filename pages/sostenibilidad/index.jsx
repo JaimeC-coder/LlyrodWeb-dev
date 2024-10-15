@@ -7,11 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 //img
-import ImagenSostenibilidad from "./assets/img/sostenibilidad/imagen_sostenibilidad.jpg";
-import Sostenibilidad1 from "./assets/img/sostenibilidad/sostenibilidad_1.jpg";
-import Sostenibilidad2 from "./assets/img/sostenibilidad/sostenibilidad_2.jpg";
-import Sostenibilidad3 from "./assets/img/sostenibilidad/sostenibilidad_3.jpg";
-import LogoHome from "./assets/logo_soloimagen.png";
+import ImagenSostenibilidad from "./../assets/img/sostenibilidad/imagen_sostenibilidad.jpg";
+import Sostenibilidad1 from "./../assets/img/sostenibilidad/sostenibilidad_1.jpg";
+import Sostenibilidad2 from "./../assets/img/sostenibilidad/sostenibilidad_2.jpg";
+import Sostenibilidad3 from "./../assets/img/sostenibilidad/sostenibilidad_3.jpg";
+import LogoHome from "./../assets/logo_soloimagen.png";
 
 //icons
 import {BsGraphUpArrow} from "react-icons/bs";
