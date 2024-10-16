@@ -8,17 +8,46 @@ import Image from "next/image";
 
 //img
 import MineriaPrincipal from "./industrias/mineria/mineria_principal.png";
-import Mineria1 from "./industrias/mineria/mineria_1.png";
-import Mineria2 from "./industrias/mineria/mineria_2.png";
-import Mineria3 from "./industrias/mineria/mineria_3.png";
+import Mineria1 from "./img/mineria/minieria1.png";
+import Mineria2 from "./img/mineria/minieria2.png";
+import Mineria3 from "./img/mineria/minieria3.png";
+import Mineria4 from "./img/mineria/mineria4.png";
+import Mineria5 from "./img/mineria/mineria5.png";
+import Mineria6 from "./img/mineria/minieria1.png";
+import Capacitacion1 from "./img/mineria/capacitacion1.jpg";
+import Capacitacion2 from "./img/mineria/capacitacion2.jpg";
+import Capacitacion3 from "./img/mineria/capacitacion3.jpg";
+import Capacitacion4 from "./img/mineria/capacitacion4.jpg";
+
+import InteligenciaPrincipal from "./img/inteligenciaNegocios/titulo.jpg";
+import Inteligencia1 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+import Inteligencia2 from "./img/inteligenciaNegocios/inteligenciaNegocios2.png";
+import Inteligencia3 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+
+import Inteligencia4 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+import Inteligencia5 from "./img/inteligenciaNegocios/inteligenciaNegocios2.png";
+import Inteligencia6 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+
+import Inteligencia7 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+import Inteligencia8 from "./img/inteligenciaNegocios/inteligenciaNegocios2.png";
+import Inteligencia9 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
+
+
+
 import TecnologiaPrincipal from "./industrias/tecnologia/tecnologia_principal.png";
 import Tecnologia1 from "./industrias/tecnologia/tecnologia_1.png";
 import Tecnologia2 from "./industrias/tecnologia/tecnologia_2.png";
 import Tecnologia3 from "./industrias/tecnologia/tecnologia_3.png";
-import InteligenciaPrincipal from "./industrias/inteligencia/inteligencia_prinicipal.png";
-import Inteligencia1 from "./industrias/inteligencia/inteligencia_1.png";
-import Inteligencia2 from "./industrias/inteligencia/inteligencia_2.png";
-import Inteligencia3 from "./industrias/inteligencia/inteligencia_3.png";
+
+import Tecnologia4 from "./industrias/tecnologia/tecnologia_1.png";
+import Tecnologia5 from "./industrias/tecnologia/tecnologia_2.png";
+import Tecnologia6 from "./industrias/tecnologia/tecnologia_3.png";
+
+import Tecnologia7 from "./industrias/tecnologia/tecnologia_1.png";
+import Tecnologia8 from "./industrias/tecnologia/tecnologia_2.png";
+import Tecnologia9 from "./industrias/tecnologia/tecnologia_3.png";
+
+
 
 //icons
 import { BsGraphUpArrow } from "react-icons/bs";
@@ -29,39 +58,39 @@ import Accordion from "./components/accordion";
 const cardsMineria = [
   {
     images: [Mineria1, Mineria2, Mineria3],
-    tittle: "Diagnóstico socioeconómico-productivo",
+    tittle: "Diagnóstico de potencialidades productivas  –  Raura",
     texto:
-      "Nuestro compromiso es entender a fondo la dinámica de las comunidades locales y su entorno, para asegurarnos de que nuestras actividades generen un impacto positivo en su bienestar.",
+      "El diagnóstico abarcó 43,616 hectáreas, con 1,536 habitantes distribuidos en 3 regiones del Perú. Incluyó un análisis socioeconómico, evaluación de actividades productivas, pecuarias y agrícolas, condiciones de las tierras, fuentes de agua, entre otros. Además, se formuló proyectos acorde a sus potencialidades.",
   },
   {
-    images: [Mineria2, Mineria3,Mineria1],
-    tittle: "Fortalecimiento de capacidades",
+    images: [Mineria4, Mineria5, Mineria6],
+    tittle: 'PLAN DE PREVENCIÓN DE FENÓMENO DE "EL NIÑO" ',
     texto:
-      "Nuestra inversión en programas de formación y desarrollo de habilidades tiene como objetivo mejorar la calidad de vida y las oportunidades de las personas que rodean nuestras operaciones.",
+      "Ante una posible afectación del aparato productivo de los sectores, dada por la probabilidad de ocurrencia del fenómeno de El Niño en el 2023, se analizó la base de datos climatológica y modeló los posibles escenarios a enfrentar",
   },
   {
-    images: [Mineria3, Mineria1,Mineria2],
-    tittle: "Articulación comercial",
+    images: [Capacitacion1, Capacitacion2, Capacitacion3, Capacitacion4],
+    tittle: "Capacitacion ganadera y promocion de productos ganadero",
     texto:
-      "Trabajamos en estrecha colaboración con empresas y emprendedores de la región para fomentar alianzas que impulsen el crecimiento sostenible y la prosperidad compartida.",
+      "El cobre, uno de los metales más fundamentales necesarios en la transición energética, está adquido",
   },
 ];
 
 const cardsTecnologia = [
   {
-    image: Tecnologia1,
+    images: [Tecnologia1, Tecnologia2, Tecnologia3],
     tittle: "Programas Intensivos de Aprendizaje",
     texto:
       "Experiencia de aprendizaje inmersiva y de alto impacto, que proporciona las habilidades y conceptos esenciales en un corto período e impulsa el desarrollo personal y profesional.",
   },
   {
-    image: Tecnologia3,
+    images: [Tecnologia4, Tecnologia5, Tecnologia6],
     tittle: "Entrenamiento para Data Engineers jr.",
     texto:
       "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas.",
   },
   {
-    image: Tecnologia2,
+    images: [Tecnologia7, Tecnologia8, Tecnologia9],
     tittle: "Outsourcing especializado",
     texto:
       "Confía en Grupo Llyrod para obtener soluciones de outsourcing especializado. Nuestro enfoque se centra en brindarte servicios personalizados que optimizan tus operaciones y te permiten concentrarte en lo que realmente importa.",
@@ -70,19 +99,19 @@ const cardsTecnologia = [
 
 const cardsBi = [
   {
-    image: Inteligencia1,
+    images: [Inteligencia1, Inteligencia2, Inteligencia3],
     tittle: "Análisis Predictivo",
     texto:
       "Descubriendo oportunidades ocultas y anticipando cambios en la industria a través de análisis avanzados que ayudarán a tomar desiciones.",
   },
   {
-    image: Inteligencia2,
+    images: [Inteligencia4, Inteligencia5, Inteligencia6],
     tittle: "Desarrollo de Soluciones",
     texto:
       "Desarrollando soluciones informadas a medida para abordar los desafíos únicos de nuestros clientes y fomentar su éxito.",
   },
   {
-    image: Inteligencia3,
+    images: [Inteligencia7, Inteligencia8, Inteligencia9],
     tittle: "Cloud Computing",
     texto:
       "Utilizando tecnologías de vanguardia para impulsar la evolución de los negocios hacia un futuro más prometedor.",
@@ -93,26 +122,21 @@ const Industrias = () => {
   return (
     <>
       <div className="">
-      <section className={styles.subtittleSection} id="mineria">
+        <section className={styles.subtittleSection} id="mineria">
           <div className={styles.subtittleContainer}>
             <h2 className={styles.tittlePrincipalIndustrias}>
               Minería & <br></br>Gestión Social
             </h2>
             <div className={styles.textIndustrias}>
               <h2 className={styles.textPrincipalIndustrias}>
-                En el marco de la política de responsabilidad
-                social-corporativa, facilitamos soluciones destinadas a promover
-                el desarrollo y sostenibilidad de las comunidades involucradas
-                en minería, gestión social y relaciones comunitarias.
+                Desarrollamos estudios especializados y proyectos destinados a
+                atender la zona de influencia directa e indirecta de mina.
+                Nuestros estandares secundan las politicas corporativas de alto
+                nivel como seguridad y salud ocupacional anti fraude, lavado de
+                activos, anti corrupción y compliance. Orientamos el desarrollo
+                de nuestros proyectos e intervenciones bajo un enfoque ESG:
+                Enviromental, Social and Governance.
               </h2>
-              <div className={styles.textPrincipalIndustrias}>
-                <p>
-                Grupo Llyrod tiene amplia experiencia en proyectos de infraestructura, educación, salud y desarrollo de cadenas productivas. En minería, su enfoque se basa en sostenibilidad y ética, buscando contribuir al bienestar de las comunidades locales y al cuidado del medio ambiente. Además, se compromete a altos estándares éticos, priorizando la integridad, transparencia y lucha contra la corrupción en sus operaciones.
-               <br />
-                Además, nos comprometemos a respetar los más altos estándares éticos en todas nuestras operaciones. La integridad y la transparencia son fundamentales para nuestra cultura empresarial, y trabajamos incansablemente para prevenir la corrupción y promover la ética en todas nuestras relaciones comerciales.
-                </p>
-              </div>
-       
             </div>
           </div>
         </section>
@@ -123,43 +147,44 @@ const Industrias = () => {
             <h2 className={styles.phototittleSecondary}>
               Promovemos el desarrollo sostenible y ética en minería.
             </h2>
-          
           </div>
-        
-          <img
 
+          <img
             className={styles.photo}
             src={MineriaPrincipal.src}
             alt="Minería"
           />
-          
         </section>
-      
+
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
             {cardsMineria.map((card, index) => {
               const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
+              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
 
               return (
                 <div className={cardStyle} key={index}>
                   <div
                     className={styles.imageContainer}
-                    style={{ "--totalDuration": `${card.images.length * 1}s` }}
+                    style={{ "--totalDuration": `${card.images.length * 2}s` }}
                   >
-                 
                     {card.images.map((image, imageIndex) => (
                       <img
                         className={styles.cardImage}
-                        src={image.src} 
+                        src={image.src}
                         alt={card.tittle}
                         key={imageIndex}
-                        style={{ animationDelay: `${imageIndex * (100 / card.images.length)}%` }} 
+                        style={{
+                          animationDelay: `${
+                            imageIndex * (100 / card.images.length)
+                          }%`,
+                        }}
                       />
                     ))}
                   </div>
                   <div className={styles.cardcontexttext}>
-                    <span className={styles.cardTittle}>{card.tittle}</span>
+                    <span className={cardStyletext}>{card.tittle}</span>
                     <span className={styles.cardTexto}>{card.texto}</span>
                   </div>
                 </div>
@@ -177,27 +202,18 @@ const Industrias = () => {
             </h2>
             <div className={styles.textIndustrias}>
               <h2 className={styles.textPrincipalIndustrias}>
-                En medio de una industria que está experimentando cambios
-                drásticos, ofrecemos ideas para transformar negocios del futuro.
+              En medio de una industria que está experimentando un cambio fundamental, ofrecemos ideas para ayudar a remodelar el negocio para el futuro.
               </h2>
-              <Accordion
-                title={
-                  "En un entorno empresarial en constante evolución y transformación, en Grupo Llyrod nos destacamos por nuestra capacidad para anticipar y liderar los cambios en la industria. Estamos comprometidos a ofrecer ideas innovadoras y soluciones estratégicas que ayuden a las empresas a adaptarse y prosperar en el panorama empresarial del futuro. Nuestra visión es ser pioneros en la identificación de tendencias emergentes y en la aplicación de tecnologías disruptivas para impulsar la transformación empresarial. "
-                }
-                content={
-                  "Trabajamos en estrecha colaboración con nuestros clientes para comprender sus desafíos y oportunidades específicos, y luego desarrollamos estrategias personalizadas que les permitan destacarse en sus respectivos sectores."
-                }
-              />
             </div>
           </div>
         </section>
 
         <section className={styles.photoSection}>
-          <div className={styles.degradadoPortafolioTop}></div>
+          <div className={styles.degradadoPortafolioTop1}></div>
           <img
             className={styles.photo}
             src={InteligenciaPrincipal.src}
-            alt="Inteligencia Artificial"
+            alt="Inteligencia de Negocios"
           />
           <div className={styles.photoContainer}>
             <h2 className={styles.phototittleSecondary}>
@@ -210,19 +226,40 @@ const Industrias = () => {
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
+          <div className={styles.cardsContainer}>
             {cardsBi.map((card, index) => {
+              const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
+              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
+
               return (
-                <div className={styles.card} key={index}>
-                  <img
-                    className={styles.cardImage}
-                    src={card.image.src}
-                    alt={card.tittle}
-                  />
-                  <span className={styles.cardTittle}>{card.tittle}</span>
-                  <span className={styles.cardTexto}>{card.texto}</span>
+                <div className={cardStyle} key={index}>
+                  <div
+                    className={styles.imageContainer}
+                    style={{ "--totalDuration": `${card.images.length * 2}s` }}
+                  >
+                    {card.images.map((image, imageIndex) => (
+                      <img
+                        className={styles.cardImage}
+                        src={image.src}
+                        alt={card.tittle}
+                        key={imageIndex}
+                        style={{
+                          animationDelay: `${
+                            imageIndex * (100 / card.images.length)
+                          }%`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <div className={styles.cardcontexttext}>
+                    <span className={cardStyletext}>{card.tittle}</span>
+                    <span className={styles.cardTexto}>{card.texto}</span>
+                  </div>
                 </div>
               );
             })}
+          </div>
+     
           </div>
         </section>
       </div>
@@ -231,29 +268,22 @@ const Industrias = () => {
         <section className={styles.subtittleSection} id="tecnologia">
           <div className={styles.subtittleContainer}>
             <h2 className={styles.tittlePrincipalIndustrias}>
-              Incubadora <br></br>de desarrollo
+              Transformación digital <br></br> e Inteligencia Artificial
             </h2>
             <div className={styles.textIndustrias}>
               <h2 className={styles.textPrincipalIndustrias}>
-                Un espacio dedicado a fomentar la creatividad, la colaboración y
-                el progreso continuo. Nuestra visión es ser un catalizador para
-                la transformación, impulsando soluciones audaces y nuevas
-                perspectivas.{" "}
+                Facilitamos la transición hacia la digitalización democratizando
+                el uso de nuevas tecnologías. Nuestro enfoque responde a la
+                aplicación concreta de nuevas herramientas y posterior
+                escalamiento hacia nuevos modelos de negocio adaptados a la era
+                digital.
               </h2>
-              <Accordion
-                title={
-                  "Grupo Llyrod es un punto de encuentro para mentes inquisitivas y apasionadas. Aquí, nuestros equipos y colaboradores exploran ideas vanguardistas, desarrollan soluciones disruptivas y forjan alianzas estratégicas para el futuro. Fomentamos la experimentación y el aprendizaje constante, brindando un entorno que nutre la innovación y el crecimiento."
-                }
-                content={
-                  "Utilizamos sistemas de gestión de datos y análisis avanzados para recopilar información valiosa sobre el rendimiento de nuestras operaciones, lo que nos permite tomar decisiones más acertadas y basadas en datos en tiempo real."
-                }
-              />
             </div>
           </div>
         </section>
 
         <section className={styles.photoSection}>
-          <div className={styles.degradadoPortafolioTop}></div>
+          <div className={styles.degradadoPortafolioTop1}></div>
           <img
             className={styles.photo}
             src={TecnologiaPrincipal.src}
@@ -270,16 +300,35 @@ const Industrias = () => {
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
-            {cardsTecnologia.map((card, index) => {
+            
+              {cardsTecnologia.map((card, index) => {
+              const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
+              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
+
               return (
-                <div className={styles.card} key={index}>
-                  <img
-                    className={styles.cardImage}
-                    src={card.image.src}
-                    alt={card.tittle}
-                  />
-                  <span className={styles.cardTittle}>{card.tittle}</span>
-                  <span className={styles.cardTexto}>{card.texto}</span>
+                <div className={cardStyle} key={index}>
+                  <div
+                    className={styles.imageContainer}
+                    style={{ "--totalDuration": `${card.images.length * 2}s` }}
+                  >
+                    {card.images.map((image, imageIndex) => (
+                      <img
+                        className={styles.cardImage}
+                        src={image.src}
+                        alt={card.tittle}
+                        key={imageIndex}
+                        style={{
+                          animationDelay: `${
+                            imageIndex * (100 / card.images.length)
+                          }%`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <div className={styles.cardcontexttext}>
+                    <span className={cardStyletext}>{card.tittle}</span>
+                    <span className={styles.cardTexto}>{card.texto}</span>
+                  </div>
                 </div>
               );
             })}

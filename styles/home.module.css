@@ -38,6 +38,7 @@
 }
 
 .texto{
+   width: 100%;
    display: flex;
    flex-direction: column;
 }
@@ -57,32 +58,12 @@
    font-weight: 300;
    font-family: var(--ibm);
    color: var(--white);
-/*
-   width: 0;
-   overflow: hidden;
-   white-space: nowrap;
-   border-right: 0.15em solid var(--white);
-   animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;*/
 }
 
+.textoPrincipalmovil{
 
-/*
-@keyframes typing {
-   from {
-     width: 0;
-   }
-   to {
-     width: 100%;
-   }
+   display: none;
 }
-
-@keyframes blink {
-   50% {
-     border-color: transparent;
-   }
- }
- */
-
 .buttonVer{
    border: 1px solid var(--white);
    background-color: var(--white);
@@ -184,7 +165,8 @@
 
 /*---------------------------------------------------------- info -------------------------------------------------*/
 
-.infoSection{padding: 0px 20px;
+.infoSection{
+   padding: 0px 20px;
    display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -221,63 +203,10 @@
    width: 60%;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media (max-width: 800px){
    .textandGraph{
-      top: 10%;
-      display: flex;
-      flex-direction: column;
-      padding: 0px 40px;
-   }
-
-   .texto{
-      justify-content: center;
-      align-items: center;
-   }
-
-   .graficohome{
-      width: 280px;
-      height: auto;
-   }
-
-   /*---------------------------------------------------------- cards -------------------------------------------------*/
-
-   .cardsContainer{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-   }
-
-   .linkCard{
-      width: 100%;
-   }
-
-   .degradadoPortafolioTopCards {
-      height: 420px;
-      margin-bottom: -420px;
-   }
-
-   .imagenCard{
-      height: 420px;
-   }
-
-   /*---------------------------------------------------------- info -------------------------------------------------*/
-
-   .infoSection{
-      padding: 40px 60px 80px 60px;
-   }
-
-   .infoHome{
-      width: 100%;
-   }
-   
-}
-
-@media screen and (max-width: 640px) {
-   .textandGraph{
-      top: 10%;
+      top: 40%;
       display: flex;
       flex-direction: column;
       padding: 0px 40px;
@@ -289,26 +218,52 @@
    }
 
    .textoSecundario{
-      font-size: var(--28);
-      text-align: center;
+      font-size: 25px;
+      text-align: left;
    }
 
    .textoPrincipal{
-      font-size: var(--36);
-      text-align: center;
+      font-size: 20px;
+      text-align: left;
       font-weight: 500;
+      display: none;
    }
+   .textoPrincipalmovil{
+      font-size: 18px;
+      padding-top: 25px;
+      text-align: left;
+      font-weight: 500;
+
+    
+      width: 100%;   
+      font-weight: 300;
+      font-family: var(--ibm);
+      color: var(--white);
+   }
+
+   .cardsSection{
+      display: flex;
+      flex-direction: row;
+   }
+   .cardsContainer{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+   
+   .linkCard{
+      width: 100%;
+   }
+  
 
    .graficohome{
       width: 280px;
       height: auto;
    }
 
-   /*---------------------------------------------------------- cards -------------------------------------------------*/
-
-   .cardsSection{
+   /* .cardsSection{
       padding: 20px 20px;
-   }
+   } */
 
    .degradadoPortafolioTopCards {
       height: 360px;

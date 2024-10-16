@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import Logo from "../pages/assets/logo_soloimagen.png";
 
 const pages = [
-  { name: "¿Quienes somos?", link: "/industrias" },
+  { name: "¿Quienes somos?", link: "/#somos" },
   { name: "¿Que es lo que hacemos?", link: "/industrias" },
   // { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
   { name: "Unete a nosostros", link: "/trabaja_con_nosotros" },

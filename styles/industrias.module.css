@@ -35,8 +35,8 @@
 	justify-content: center;
 	align-items: center;
    background-color: var(--dark);
-   background: linear-gradient(345deg, var(--dark) 40%, #323240);
-   background-color: var(--dark);
+   /* background: linear-gradient(345deg, var(--dark) 40%, #323240);
+  */
    padding: 60px 80px;
 }
 
@@ -63,7 +63,7 @@
 
 .textPrincipalIndustrias{
    font-size: var(--20);
-   font-weight: 400;
+   font-weight: 300;
    color: var(--white);
    margin-bottom: 8px;
    width: 100%;
@@ -127,10 +127,10 @@
 
 .degradadoPortafolioTop {
    position: relative;
-   height: 480px;
+   height: 100px;
    background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(3, 3, 33, 0.70) 98%);
    z-index: 0;
-   margin-bottom: -480px;
+   margin-bottom: -300px;
 }
 .degradadoPortafolioTop1 {
    position: relative;
@@ -180,6 +180,7 @@
    width: 100%;
    gap: 20px;
    margin: 40px 0px;
+   text-align: left !important;
 }
 
 .cardImage{
@@ -192,7 +193,7 @@
 .imageContainer {
    display: flex;
    width: 100%;
-   height: 500px; /* Ajusta según la altura que desees */
+   height: 300px;
    position: relative;
    overflow: hidden;
  }
@@ -217,8 +218,8 @@
    }
    25% {
      opacity: 1;
-       transform: scale(1); /* Zoom ligero */
-   }
+       transform: scale(1); 
+    }
    50% {
      opacity: 0;
    }
@@ -228,7 +229,8 @@
    100% {
      opacity: 0;
    }
- }
+ } 
+ 
 
 
 
@@ -253,16 +255,21 @@
    font-family: var(--ibm);
    font-weight: 400;
    font-size: 30px;
-   
    color: var(--dark);
 }
 
 .cardTexto{
    font-family: var(--ibm);
-   font-size: var(--16);
    color: var(--dark);
-   font-size: 25px ;
+   font-size: 20px ;
    text-align: justify;
+}
+.cardTittlePar{
+   font-family: var(--ibm);
+   font-weight: 400;
+   font-size: 30px;
+   color: var(--dark);
+   text-align: left !important;
 }
 
 
@@ -348,7 +355,7 @@
    /*photomineria*/
 
    .photo{
-      height: 400px;
+      height: 350px;
    }
 
    .photoContainer{
@@ -360,6 +367,10 @@
    .degradadoPortafolioTop {
       height: 400px;
       margin-bottom: -400px;
+   }
+   .degradadoPortafolioTop1 {
+      height: 350px;
+      margin-bottom: -350px;
    }
 
    .phototittleSecondary{
