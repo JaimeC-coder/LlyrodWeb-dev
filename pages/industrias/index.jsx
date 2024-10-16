@@ -123,12 +123,16 @@ const Industrias = () => {
             <h2 className={styles.phototittleSecondary}>
               Promovemos el desarrollo sostenible y ética en minería.
             </h2>
+          
           </div>
-          <Image
+        
+          <img
+
             className={styles.photo}
-            src={MineriaPrincipal}
+            src={MineriaPrincipal.src}
             alt="Minería"
           />
+          
         </section>
       
         <section className={styles.cardsSection}>
@@ -143,6 +147,7 @@ const Industrias = () => {
                     className={styles.imageContainer}
                     style={{ "--totalDuration": `${card.images.length * 1}s` }}
                   >
+                 
                     {card.images.map((image, imageIndex) => (
                          console.log("este es la imagen "+image.src),
                       <img
@@ -190,9 +195,9 @@ const Industrias = () => {
 
         <section className={styles.photoSection}>
           <div className={styles.degradadoPortafolioTop}></div>
-          <Image
+          <img
             className={styles.photo}
-            src={InteligenciaPrincipal}
+            src={InteligenciaPrincipal.src}
             alt="Inteligencia Artificial"
           />
           <div className={styles.photoContainer}>
@@ -209,9 +214,9 @@ const Industrias = () => {
             {cardsBi.map((card, index) => {
               return (
                 <div className={styles.card} key={index}>
-                  <Image
+                  <img
                     className={styles.cardImage}
-                    src={card.image}
+                    src={card.image.src}
                     alt={card.tittle}
                   />
                   <span className={styles.cardTittle}>{card.tittle}</span>
@@ -250,9 +255,9 @@ const Industrias = () => {
 
         <section className={styles.photoSection}>
           <div className={styles.degradadoPortafolioTop}></div>
-          <Image
+          <img
             className={styles.photo}
-            src={TecnologiaPrincipal}
+            src={TecnologiaPrincipal.src}
             alt="Tecnología"
           />
           <div className={styles.photoContainer}>
@@ -269,9 +274,9 @@ const Industrias = () => {
             {cardsTecnologia.map((card, index) => {
               return (
                 <div className={styles.card} key={index}>
-                  <Image
+                  <img
                     className={styles.cardImage}
-                    src={card.image}
+                    src={card.image.src}
                     alt={card.tittle}
                   />
                   <span className={styles.cardTittle}>{card.tittle}</span>
