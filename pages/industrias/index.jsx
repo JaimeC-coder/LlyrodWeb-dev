@@ -144,9 +144,10 @@ const Industrias = () => {
                     style={{ "--totalDuration": `${card.images.length * 1}s` }}
                   >
                     {card.images.map((image, imageIndex) => (
-                      <Image
+                         console.log("este es la imagen "+image.src),
+                      <img
                         className={styles.cardImage}
-                        src={image} // Aquí recorremos las imágenes dentro del array 'images'
+                        src={image.src} 
                         alt={card.tittle}
                         key={imageIndex}
                         style={{ animationDelay: `${imageIndex * (100 / card.images.length)}%` }} 
