@@ -149,7 +149,6 @@ const Industrias = () => {
                   >
                  
                     {card.images.map((image, imageIndex) => (
-                         console.log("este es la imagen "+image.src),
                       <img
                         className={styles.cardImage}
                         src={image.src} 
