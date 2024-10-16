@@ -36,7 +36,7 @@ const Sostenibilidad = () => {
       <section className={styles.photoSection}>
         <div className={styles.degradadoPortafolioTop}>
         </div>
-         <Image className={styles.photoSostenibilidad} src={ImagenSostenibilidad} alt="Sostenibilidad"/> 
+         <img className={styles.photoSostenibilidad} src={ImagenSostenibilidad.src} alt="Sostenibilidad"/> 
          <div className={styles.photoContainer}>
             <h2 className={styles.phototittleSecondary}>Las organizaciones son más responsables en materia de Sostenibilidad & ESG</h2>
          </div>
@@ -46,7 +46,7 @@ const Sostenibilidad = () => {
             {cards.map((card, index) =>{
                return (
                   <div className={styles.card} key={index}>
-                     <Image className={styles.cardImage} src={card.image} alt={card.tittle}/>
+                     <img className={styles.cardImage} src={card.image.src} alt={card.tittle}/>
                      <h2 className={styles.cardNumber}>{card.number}</h2>
                      <span className={styles.cardTittle}>{card.tittle}</span>
                      <span className={styles.cardTexto}>{card.texto}</span>

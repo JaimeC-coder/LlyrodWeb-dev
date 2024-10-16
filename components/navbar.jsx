@@ -64,7 +64,7 @@ const Navbar = () => {
       <section className={`${styles.navSection} ${isFixed ? styles.fixedNavbar : ""}`}>
         <nav className={styles.navContainer}>
           <Link className={styles.logoContainer} href="/">
-            <Image src={Logo} className={styles.logo} alt="Logo" />
+            <img src={Logo.src} className={styles.logo} alt="Logo" />
           </Link>
           <button className={styles.menuToggle} onClick={toggleMenu}>
             ☰ {/* Icono de hamburguesa */}

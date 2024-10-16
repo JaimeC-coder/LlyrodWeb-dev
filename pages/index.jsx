@@ -81,8 +81,6 @@ const Home = () => {
         <div className={styles.imageContainer}>
           <div className={styles.degradadoPortafolioTop}>
           </div>
-
-          { /* <Image src={ImagenHome} className={styles.imagen} alt="Imagen Home"/> */}
           <video ref={videoRef} src={require('./video_home.mp4')} className={styles.imagen} muted loop autoPlay/>
           {/*<button ref={buttonRef} onClick={handlePlayClick} >Play Video</button>*/}
 
@@ -115,7 +113,7 @@ const Home = () => {
                     <div className={styles.imageContainerCards}>
                       <div className={styles.degradadoPortafolioTopCards}>
                       </div>
-                      <Image src={card.imagen} className={styles.imagenCard} alt="Imagen Home"/>
+                      <img src={card.imagen.src} className={styles.imagenCard} alt="Imagen Home"/>
                       <div className={styles.textoCard}>
                           {/*<span className={styles.cardIcon}> {card.icon} </span>*/}
                           <span className={styles.cardTittle}> {card.tittle} </span>
