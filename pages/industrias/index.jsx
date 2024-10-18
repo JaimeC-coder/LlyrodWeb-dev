@@ -32,8 +32,6 @@ import Inteligencia7 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png"
 import Inteligencia8 from "./img/inteligenciaNegocios/inteligenciaNegocios2.png";
 import Inteligencia9 from "./img/inteligenciaNegocios/inteligenciaNegocios1.png";
 
-
-
 import TecnologiaPrincipal from "./industrias/tecnologia/tecnologia_principal.png";
 import Tecnologia1 from "./industrias/tecnologia/tecnologia_1.png";
 import Tecnologia2 from "./industrias/tecnologia/tecnologia_2.png";
@@ -46,8 +44,6 @@ import Tecnologia6 from "./industrias/tecnologia/tecnologia_3.png";
 import Tecnologia7 from "./industrias/tecnologia/tecnologia_1.png";
 import Tecnologia8 from "./industrias/tecnologia/tecnologia_2.png";
 import Tecnologia9 from "./industrias/tecnologia/tecnologia_3.png";
-
-
 
 //icons
 import { BsGraphUpArrow } from "react-icons/bs";
@@ -122,31 +118,24 @@ const Industrias = () => {
   return (
     <>
       <div className="">
-        <section className={styles.subtittleSection} id="mineria">
-          <div className={styles.subtittleContainer}>
-            <h2 className={styles.tittlePrincipalIndustrias}>
-              Minería & <br></br>Gestión Social
-            </h2>
-            <div className={styles.textIndustrias}>
-              <h2 className={styles.textPrincipalIndustrias}>
-                Desarrollamos estudios especializados y proyectos destinados a
-                atender la zona de influencia directa e indirecta de mina.
-                Nuestros estandares secundan las politicas corporativas de alto
-                nivel como seguridad y salud ocupacional anti fraude, lavado de
-                activos, anti corrupción y compliance. Orientamos el desarrollo
-                de nuestros proyectos e intervenciones bajo un enfoque ESG:
-                Enviromental, Social and Governance.
-              </h2>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.photoSection}>
+        <section className={styles.photoSection} id="mineria">
           <div className={styles.degradadoPortafolioTop1}></div>
           <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>
-              Promovemos el desarrollo sostenible y ética en minería.
-            </h2>
+            <div className={styles.subtittleContainer}>
+              <h2 className={styles.tittlePrincipalIndustrias}>
+                Minería & <br></br>Gestión Social
+              </h2>
+              <div className={styles.textIndustrias}>
+                <h2 className={styles.textPrincipalIndustrias}>
+                  Desarrollamos estudios especializados y proyectos destinados a
+                  atender la zona de influencia directa e indirecta de mina.
+                  Nuestros estandares secundan las politicas corporativas de
+                  alto nivel. Orientamos el desarrollo de nuestros proyectos e
+                  intervenciones bajo un enfoque ESG: Enviromental, Social and
+                  Governance.
+                </h2>
+              </div>
+            </div>
           </div>
 
           <img
@@ -161,7 +150,8 @@ const Industrias = () => {
           <div className={styles.cardsContainer}>
             {cardsMineria.map((card, index) => {
               const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
-              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
+              const cardStyletext =
+                index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
 
               return (
                 <div className={cardStyle} key={index}>
@@ -195,94 +185,75 @@ const Industrias = () => {
       </div>
 
       <div className="">
-        <section className={styles.subtittleSection} id="due_diligence">
-          <div className={styles.subtittleContainer}>
-            <h2 className={styles.tittlePrincipalIndustrias}>
-              Inteligencia de <br></br>negocios
-            </h2>
-            <div className={styles.textIndustrias}>
-              <h2 className={styles.textPrincipalIndustrias}>
-              En medio de una industria que está experimentando un cambio fundamental, ofrecemos ideas para ayudar a remodelar el negocio para el futuro.
-              </h2>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.photoSection}>
+        <section className={styles.photoSection} id="due_diligence">
           <div className={styles.degradadoPortafolioTop1}></div>
           <img
             className={styles.photo}
             src={InteligenciaPrincipal.src}
             alt="Inteligencia de Negocios"
           />
-          <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>
-              La inteligencia de negocios acelera la innovación y la toma de
-              decisiones clave
-            </h2>
+          <div className={styles.photoContainerPar}>
+            <div className={styles.subtittleContainer}>
+              <h2 className={styles.tittlePrincipalIndustriasPar}>
+                Inteligencia de <br></br>negocios
+              </h2>
+              <div className={styles.textIndustrias}>
+                <h2 className={styles.textPrincipalIndustrias}>
+                  En medio de una industria que está experimentando un cambio
+                  fundamental, ofrecemos ideas para ayudar a remodelar el
+                  negocio para el futuro.
+                </h2>
+              </div>
+            </div>
           </div>
         </section>
 
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
-          <div className={styles.cardsContainer}>
-            {cardsBi.map((card, index) => {
-              const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
-              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
+            <div className={styles.cardsContainer}>
+              {cardsBi.map((card, index) => {
+                const cardStyle =
+                  index % 2 === 0 ? styles.card : styles.cardPar;
+                const cardStyletext =
+                  index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
 
-              return (
-                <div className={cardStyle} key={index}>
-                  <div
-                    className={styles.imageContainer}
-                    style={{ "--totalDuration": `${card.images.length * 2}s` }}
-                  >
-                    {card.images.map((image, imageIndex) => (
-                      <img
-                        className={styles.cardImage}
-                        src={image.src}
-                        alt={card.tittle}
-                        key={imageIndex}
-                        style={{
-                          animationDelay: `${
-                            imageIndex * (100 / card.images.length)
-                          }%`,
-                        }}
-                      />
-                    ))}
+                return (
+                  <div className={cardStyle} key={index}>
+                    <div
+                      className={styles.imageContainer}
+                      style={{
+                        "--totalDuration": `${card.images.length * 2}s`,
+                      }}
+                    >
+                      {card.images.map((image, imageIndex) => (
+                        <img
+                          className={styles.cardImage}
+                          src={image.src}
+                          alt={card.tittle}
+                          key={imageIndex}
+                          style={{
+                            animationDelay: `${
+                              imageIndex * (100 / card.images.length)
+                            }%`,
+                          }}
+                        />
+                      ))}
+                    </div>
+                    <div className={styles.cardcontexttext}>
+                      <span className={cardStyletext}>{card.tittle}</span>
+                      <span className={styles.cardTexto}>{card.texto}</span>
+                    </div>
                   </div>
-                  <div className={styles.cardcontexttext}>
-                    <span className={cardStyletext}>{card.tittle}</span>
-                    <span className={styles.cardTexto}>{card.texto}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-     
+                );
+              })}
+            </div>
           </div>
         </section>
       </div>
 
       <div className="">
-        <section className={styles.subtittleSection} id="tecnologia">
-          <div className={styles.subtittleContainer}>
-            <h2 className={styles.tittlePrincipalIndustrias}>
-              Transformación digital <br></br> e Inteligencia Artificial
-            </h2>
-            <div className={styles.textIndustrias}>
-              <h2 className={styles.textPrincipalIndustrias}>
-                Facilitamos la transición hacia la digitalización democratizando
-                el uso de nuevas tecnologías. Nuestro enfoque responde a la
-                aplicación concreta de nuevas herramientas y posterior
-                escalamiento hacia nuevos modelos de negocio adaptados a la era
-                digital.
-              </h2>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.photoSection}>
+        <section className={styles.photoSection} id="tecnologia">
           <div className={styles.degradadoPortafolioTop1}></div>
           <img
             className={styles.photo}
@@ -290,20 +261,30 @@ const Industrias = () => {
             alt="Tecnología"
           />
           <div className={styles.photoContainer}>
-            <h2 className={styles.phototittleSecondary}>
-              Las empresas que adoptan la tecnología son las que llevan la
-              delantera
-            </h2>
+            <div className={styles.subtittleContainer}>
+              <h2 className={styles.tittlePrincipalIndustrias}>
+                Transformación digital <br></br> e Inteligencia Artificial
+              </h2>
+              <div className={styles.textIndustrias}>
+                <h2 className={styles.textPrincipalIndustrias}>
+                  Facilitamos la transición hacia la digitalización
+                  democratizando el uso de nuevas tecnologías. Nuestro enfoque
+                  responde a la aplicación concreta de nuevas herramientas y
+                  posterior escalamiento hacia nuevos modelos de negocio
+                  adaptados a la era digital.
+                </h2>
+              </div>
+            </div>
           </div>
         </section>
 
         <section className={styles.cardsSection}>
           <span className={styles.quehacemos}>¿Qué hacemos?</span>
           <div className={styles.cardsContainer}>
-            
-              {cardsTecnologia.map((card, index) => {
+            {cardsTecnologia.map((card, index) => {
               const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
-              const cardStyletext = index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
+              const cardStyletext =
+                index % 2 === 0 ? styles.cardTittle : styles.cardTittlePar;
 
               return (
                 <div className={cardStyle} key={index}>

@@ -12,7 +12,7 @@ const pages = [
   { name: "¿Quienes somos?", link: "/#somos" },
   { name: "¿Que es lo que hacemos?", link: "/industrias" },
   // { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
-  { name: "Unete a nosostros", link: "/trabaja_con_nosotros" },
+  { name: "Contactanos", link: "/trabaja_con_nosotros" },
 ];
 
 

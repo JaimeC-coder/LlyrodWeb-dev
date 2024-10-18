@@ -42,7 +42,7 @@ const SectionSomos = () => {
             Somos una consultora que transforma organizaciones y revoluciona
             industrias con innovación y tecnología. Nos especializamos en
             generar impacto positivo en el sector minero e industrial,
-            enfocándonos en la gestión social, el enfoque multicultural y la
+            enfocándonos en la gestión social,mejora continua y la
             transformación digital. Alineamos nuestros proyectos con los
             Objetivos de Desarrollo Sostenible (ODS) y los principios ESG,
             mejorando el bienestar comunitario y la eficiencia operativa
