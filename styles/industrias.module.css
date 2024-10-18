@@ -340,10 +340,13 @@
 }
 
 @media (max-width: 800px) {
+  
+
    .textIndustrias{
-      display: flex;
-      flex-direction: column;
+      display: none;
+  
    }
+ 
 
    .cardsContainer{
       width: 100%;
@@ -382,9 +385,14 @@
    }
 
    .photoContainer{
-      top: 70%;
+      top: 65%;
       left: 40px;
-      width: 280px;
+      width: 80%;
+   }
+   .photoContainerPar{
+      top: 65%;
+        left: 15%;
+        width: 80%;
    }
 
    .degradadoPortafolioTop {
