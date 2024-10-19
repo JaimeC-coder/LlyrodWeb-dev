@@ -39,7 +39,7 @@ const cards = [
     id: "tecnologia",
     imagen: InteligenciaImagen,
     icon: <BsGraphUpArrow size={24} />,
-    tittle: "Inteligencia de negocios",
+    tittle: "Due Diligence",
     link: "#",
   },
   {

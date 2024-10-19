@@ -6,11 +6,12 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 
 //img
-import Logo from "../pages/assets/logo_soloimagen.png";
+import Logo from "../pages/assets/logo_completo.png";
 
 const pages = [
-  { name: "¿Quienes somos?", link: "/#somos" },
-  { name: "¿Que es lo que hacemos?", link: "/industrias" },
+  {name: "Inicio", link: "/"},
+  { name: "Quienes somos", link: "/#somos" },
+  { name: "Nuestro Trabajo", link: "/industrias" },
   // { name: "Sostenibilidad & ESG", link: "/sostenibilidad" },
   { name: "Contactanos", link: "/trabaja_con_nosotros" },
 ];

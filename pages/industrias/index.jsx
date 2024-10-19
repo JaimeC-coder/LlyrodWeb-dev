@@ -146,7 +146,7 @@ const Industrias = () => {
         </section>
 
         <section className={styles.cardsSection}>
-          <span className={styles.quehacemos}>¿Qué hacemos?</span>
+          <span className={styles.quehacemos}>nuestros desarrollos y soluciones </span>
           <div className={styles.cardsContainer}>
             {cardsMineria.map((card, index) => {
               const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
@@ -190,13 +190,15 @@ const Industrias = () => {
           <img
             className={styles.photo}
             src={InteligenciaPrincipal.src}
-            alt="Inteligencia de Negocios"
+            alt="Due Diligence"
           />
           <div className={styles.photoContainerPar}>
             <div className={styles.subtittleContainer}>
               <h2 className={styles.tittlePrincipalIndustriasPar}>
-                Inteligencia de <br></br>negocios
+              Due diligence
+
               </h2>
+              <br /><br />
               <div className={styles.textIndustrias}>
                 <h2 className={styles.textPrincipalIndustrias}>
                   En medio de una industria que está experimentando un cambio
@@ -209,7 +211,7 @@ const Industrias = () => {
         </section>
 
         <section className={styles.cardsSection}>
-          <span className={styles.quehacemos}>¿Qué hacemos?</span>
+          <span className={styles.quehacemos}>nuestros desarrollos y soluciones </span>
           <div className={styles.cardsContainer}>
             <div className={styles.cardsContainer}>
               {cardsBi.map((card, index) => {
@@ -279,7 +281,7 @@ const Industrias = () => {
         </section>
 
         <section className={styles.cardsSection}>
-          <span className={styles.quehacemos}>¿Qué hacemos?</span>
+          <span className={styles.quehacemos}>Nuestros desarrollos y soluciones </span>
           <div className={styles.cardsContainer}>
             {cardsTecnologia.map((card, index) => {
               const cardStyle = index % 2 === 0 ? styles.card : styles.cardPar;
